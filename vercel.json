@@ -1,4 +1,11 @@
 {
-  "framework": "docusaurus",
-  "buildCommand": "cd book/textbook && npx docusaurus build"
+  "builds": [
+    {
+      "src": "book/textbook/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ]
 }
