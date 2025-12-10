@@ -86,18 +86,6 @@ const config = {
     },
   ],
 
-  plugins: [
-    // Custom plugin to inject the RAG chatbot on all pages
-    async function injectRagChatbot() {
-      return {
-        name: 'inject-rag-chatbot',
-        getClientModules() {
-          return [require.resolve('./src/components/RAGChatbot/injector')];
-        },
-      };
-    },
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
