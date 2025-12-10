@@ -1,3 +1,4 @@
 {
-  "framework": "docusaurus"
+  "framework": "docusaurus",
+  "buildCommand": "cd book/textbook && npx docusaurus build"
 }
